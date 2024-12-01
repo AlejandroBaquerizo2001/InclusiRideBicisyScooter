@@ -13,13 +13,10 @@
         android:theme="@style/Theme.InclusiRideBicisYScooter"
         tools:targetApi="31">
         <activity
-            android:name=".Views.ActivityLogin"
+            android:name=".PuntosAtencionActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.ActivityHome"
-            android:exported="false" />
-        <activity
-            android:name=".Views.ActivityFormUser"
+            android:name=".DistritoActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

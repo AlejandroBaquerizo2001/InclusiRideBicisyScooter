@@ -1,60 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PuntosAtencionActivity"
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/editTextKey"
+        android:id="@+id/editTextNombre"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Key"
-        android:layout_marginBottom="8dp"/>
+        android:hint="Nombre del punto de atención" />
 
-    <EditText
-        android:id="@+id/editTextValue"
+    <Button
+        android:id="@+id/buttonAgregar"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Value"
-        android:layout_marginBottom="8dp"/>
+        android:layout_height="wrap_content"
+        android:text="Agregar Punto de Atención" />
 
-    <LinearLayout
-        android:layout_width="397dp"
-        android:layout_height="101dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/buttonSave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="Save" />
-
-        <Button
-            android:id="@+id/buttonRetrieve"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="Retrieve" />
-
-        <Button
-            android:id="@+id/buttonRemove"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="Remove" />
-
-        <Button
-            android:id="@+id/buttonClear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clear" />
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/buttonLeer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leer Puntos de Atención" />
 </LinearLayout>
-
-

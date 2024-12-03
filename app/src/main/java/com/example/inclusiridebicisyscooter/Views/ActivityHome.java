@@ -10,8 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.inclusiridebicisyscooter.AtencionClienteActivity;
 import com.example.inclusiridebicisyscooter.DistritoActivity;
-import com.example.inclusiridebicisyscooter.HistorialActivity;
 import com.example.inclusiridebicisyscooter.PuntosAtencionActivity;
 import com.example.inclusiridebicisyscooter.R;
 import com.example.inclusiridebicisyscooter.ReservaActivity;
@@ -51,7 +51,7 @@ public class ActivityHome extends AppCompatActivity {
         });
 
         btnHistorial.setOnClickListener(v -> {
-            Intent intent = new Intent(ActivityHome.this, HistorialActivity.class);
+            Intent intent = new Intent(ActivityHome.this, AtencionClienteActivity.class);
             startActivity(intent);
         });
     }

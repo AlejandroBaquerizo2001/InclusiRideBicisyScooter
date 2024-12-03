@@ -61,6 +61,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"/>
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewClientes"
         android:layout_width="0dp"

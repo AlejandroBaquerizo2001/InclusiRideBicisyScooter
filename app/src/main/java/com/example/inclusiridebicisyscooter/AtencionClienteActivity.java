@@ -69,9 +69,9 @@ public class AtencionClienteActivity extends AppCompatActivity {
                 }
 
                 clienteDAO.agregarCliente(nombre, apellido, celular, email);
-                listaClientes.add(nombre + " " + apellido + " - " + celular + " - " + email);
+                listaClientes.add(nombre + " " + apellido + " - " + celular + " - " + email );
                 clienteAdapter.notifyItemInserted(listaClientes.size() - 1);
-                Toast.makeText(AtencionClienteActivity.this, "Cliente agregado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AtencionClienteActivity.this, "Atencion a cliente agregado", Toast.LENGTH_SHORT).show();
                 mostrarClientes();
             }
         });

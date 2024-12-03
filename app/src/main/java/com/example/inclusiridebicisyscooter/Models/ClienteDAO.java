@@ -37,10 +37,14 @@ public class ClienteDAO {
             do {
                 int nombreIndex = cursor.getColumnIndex(DatabaseHelper.COLUMN_NOMBRE);
                 int apellidoIndex = cursor.getColumnIndex(DatabaseHelper.COLUMN_APELLIDO);
+                int celularIndex = cursor.getColumnIndex(DatabaseHelper.COLUMN_CELULAR); // Agregado
+                int emailIndex = cursor.getColumnIndex(DatabaseHelper.COLUMN_EMAIL); // Agregado
 
                 // Verificar si los índices son válidos
-                if (nombreIndex != -1 && apellidoIndex != -1) {
-                    String cliente = cursor.getString(nombreIndex) + " " + cursor.getString(apellidoIndex);
+                if (nombreIndex != -1 && apellidoIndex != -1 && celularIndex != -1 && emailIndex != -1) {
+                    String cliente = cursor.getString(nombreIndex) + " " + cursor.getString(apellidoIndex) +
+                            ", Celular: " + cursor.getString(celularIndex) +
+                            ", Email: " + cursor.getString(emailIndex);
                     clientes.add(cliente);
                 } else {
                     // Manejo de error si no se encuentra la columna
@@ -52,6 +56,7 @@ public class ClienteDAO {
         db.close();
         return clientes;
     }
+
     public void actualizarCliente(int id, String nombre, String apellido, String celular, String email) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
